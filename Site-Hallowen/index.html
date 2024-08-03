@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<style>
+.menu{
+width: 100%;
+height: 80px;
+background-color: rgb(0, 0, 0);
+}
+.menu .logo{
+flex: 1px;
+background-image: url('img_site/menu_logo.png');
+width: 20%;
+height: 14px;
+padding: 6px;
+background-repeat: no-repeat;
+background-position: center center;
+}
+.menu ul{
+text-align: center;
+padding: 6px;
+flex: 4px;
+margin-top: 0px;
+}
+.menu ul li{
+display: inline;
+margin: left 15px;;
+padding: 12px;
+}
+.menu ul li a{
+text-decoration: none;
+color: rgb(255, 106, 0);
+font-family: 'Shadows Into Light', cursive;
+padding: 20px;
+}
+.menu ul li a:visited{
+  border: 5px dotted rgba(234, 44, 44, 0.532)
+  text-decoration: none;
+}
+
+ .menu ul li a:hover {
+  border: 4px solid rgb(131, 4, 4);
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.menu ul li a:active {
+ border: 6px dashed  #892525;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.banner{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 90vh;
+margin-top: 7%;
+animation: animate 14s ease-in-out infinite;
+background-size: cover;
+animation-direction:alternate-reverse;
+background-attachment: fixed;
+}
+.banner .text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text h2 span{
+    color: rgb(255, 255, 255);
+}
+.text h2 strong{
+    color: rgb(0, 0, 0);
+}
+@keyframes animate{
+0%,100%{
+    background-image: url('img_site/halloween_devilman_teste_animate.jpg');
+}
+25%{
+    background-image: url('img_site/another_halloween_site.jpg');
+}
+50%{
+    background-image: url('img_site/tokyoghoul_halllowen_site.jpg');
+}
+75%{
+    background-image: url('img_site/death-note_halloween_teste.jpg');
+}
+
+}
+.container{
+    width: 100%;
+    margin: auto;
+    min-height: 300px;
+    display: flex;
+    background-color: #000000;
+}
+
+</style>
+
+
+<body>
+    <div class="menu">
+<div class="logo"></div>
+<ul>
+    <li><a href="contato.html">sobre nós</a></li>
+    <li><a href="loja.html">loja</a></li>
+    <li><a href="hallowen.html">Ha Ha HA</a></li>
+    </ul>   
+</div>
+<section class="banner">
+<main class="text">
+    <h2>
+        <span style="font-size: 2em;font-family: 'Caveat', cursive;">Assista</span>
+        <br>
+        <span style="font-size: 1em;font-family: 'Caveat', cursive;">Se tiver
+        <strong style="background-color: #000000;padding: 2px;color: white;">CORAGEM!!</strong>
+        </span>
+    </h2>
+</main>
+</section>
+<section class="mkt">
+    <div class="container">
+        <div class="mkt-img"></div>
+        <div class="mkt-text">
+            <h1 class="horror">Mieruko-chan</h1>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
